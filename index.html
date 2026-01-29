@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bloom & Blossom - Premium florist offering beautiful flower arrangements, bouquets, and floral designs for every occasion.">
+    <meta name="description"
+        content="Bloom & Blossom - Premium florist offering beautiful flower arrangements, bouquets, and floral designs for every occasion.">
     <title>Bloom & Blossom | Premium Florist</title>
-    
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#e8a4b8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Bloom & Blossom">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Bloom & Blossom">
+    <meta name="msapplication-TileColor" content="#e8a4b8">
+    <meta name="msapplication-TileImage" content="images/icon-192.png">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- App Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/icon-512.png">
+    <link rel="apple-touch-icon" href="images/icon-192.png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -22,13 +45,13 @@
                 <span class="logo-icon">🌸</span>
                 <span class="logo-text">Bloom & Blossom</span>
             </a>
-            
+
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="products.html">Shop Flowers</a></li>
                 <li><a href="cart.html">Cart</a></li>
             </ul>
-            
+
             <div class="nav-right">
                 <a href="cart.html" class="cart-icon" id="cartIcon">
                     🛒
@@ -49,7 +72,8 @@
             <div class="hero-content">
                 <span class="hero-badge">🌿 Fresh Flowers Daily</span>
                 <h1>Beautiful <span>Blooms</span> for Every Moment</h1>
-                <p>Discover our exquisite collection of hand-crafted floral arrangements. From romantic roses to exotic orchids, we bring nature's finest beauty to your doorstep.</p>
+                <p>Discover our exquisite collection of hand-crafted floral arrangements. From romantic roses to exotic
+                    orchids, we bring nature's finest beauty to your doorstep.</p>
                 <div class="hero-buttons">
                     <a href="products.html" class="btn btn-primary">Shop Now ✨</a>
                     <a href="#featured" class="btn btn-secondary">Explore Collection</a>
@@ -83,11 +107,11 @@
                 <h2 class="section-title">Featured Arrangements</h2>
                 <p class="section-subtitle">Hand-picked favorites loved by our customers</p>
             </div>
-            
+
             <div class="products-grid" id="featuredProducts">
                 <!-- Products will be loaded by JavaScript -->
             </div>
-            
+
             <div style="text-align: center; margin-top: 3rem;">
                 <a href="products.html" class="btn btn-primary btn-lg">View All Products →</a>
             </div>
@@ -102,7 +126,7 @@
                 <h2 class="section-title">Find the Perfect Flowers</h2>
                 <p class="section-subtitle">Whatever the occasion, we have the perfect arrangement</p>
             </div>
-            
+
             <div class="categories-grid">
                 <div class="category-card" onclick="location.href='products.html'">
                     <img src="images/flower2.png" alt="Romantic">
@@ -146,9 +170,12 @@
                 <div class="about-content">
                     <span class="section-badge">About Us</span>
                     <h2>Crafting Floral Art Since 2010</h2>
-                    <p>At Bloom & Blossom, we believe that every flower tells a story. Our passionate team of floral designers creates stunning arrangements that capture emotions and celebrate life's precious moments.</p>
-                    <p>We source the freshest blooms from sustainable local farms and international growers to ensure exceptional quality and beauty in every arrangement.</p>
-                    
+                    <p>At Bloom & Blossom, we believe that every flower tells a story. Our passionate team of floral
+                        designers creates stunning arrangements that capture emotions and celebrate life's precious
+                        moments.</p>
+                    <p>We source the freshest blooms from sustainable local farms and international growers to ensure
+                        exceptional quality and beauty in every arrangement.</p>
+
                     <div class="about-features">
                         <div class="feature-item">
                             <div class="feature-icon">🌷</div>
@@ -190,13 +217,16 @@
             <div class="section-header">
                 <span class="section-badge">Testimonials</span>
                 <h2 class="section-title">What Our Customers Say</h2>
-                <p class="section-subtitle">Join thousands of happy customers who trust us with their special moments</p>
+                <p class="section-subtitle">Join thousands of happy customers who trust us with their special moments
+                </p>
             </div>
-            
+
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"The birthday bouquet I ordered exceeded all expectations! The flowers were incredibly fresh and the arrangement was absolutely stunning. My mom was in tears of joy!"</p>
+                    <p class="testimonial-text">"The birthday bouquet I ordered exceeded all expectations! The flowers
+                        were incredibly fresh and the arrangement was absolutely stunning. My mom was in tears of joy!"
+                    </p>
                     <div class="testimonial-author">
                         <div class="author-avatar">SJ</div>
                         <div class="author-info">
@@ -205,10 +235,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Bloom & Blossom provided the most beautiful wedding flowers. The team was professional, creative, and made our special day even more magical."</p>
+                    <p class="testimonial-text">"Bloom & Blossom provided the most beautiful wedding flowers. The team
+                        was professional, creative, and made our special day even more magical."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">EM</div>
                         <div class="author-info">
@@ -217,10 +248,11 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="testimonial-card">
                     <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"I've been ordering monthly subscriptions for my office and the quality is consistently amazing. Great value and excellent customer service!"</p>
+                    <p class="testimonial-text">"I've been ordering monthly subscriptions for my office and the quality
+                        is consistently amazing. Great value and excellent customer service!"</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">MC</div>
                         <div class="author-info">
@@ -253,7 +285,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <span class="logo-text">🌸 Bloom & Blossom</span>
-                    <p>Bringing beauty and joy through the art of flowers since 2010. Every arrangement is crafted with love and care.</p>
+                    <p>Bringing beauty and joy through the art of flowers since 2010. Every arrangement is crafted with
+                        love and care.</p>
                     <div class="social-links">
                         <a href="#" class="social-link">📘</a>
                         <a href="#" class="social-link">📸</a>
@@ -261,7 +294,7 @@
                         <a href="#" class="social-link">📌</a>
                     </div>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul>
@@ -271,7 +304,7 @@
                         <li><a href="#about">About Us</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Categories</h4>
                     <ul>
@@ -281,7 +314,7 @@
                         <li><a href="products.html">Sympathy</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul>
@@ -292,7 +325,7 @@
                     </ul>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
                 <p>© 2024 Bloom & Blossom. All rights reserved. Made with 💗 and 🌸</p>
             </div>
@@ -301,5 +334,57 @@
 
     <!-- JavaScript -->
     <script src="main.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        // Register Service Worker for PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('🌸 Service Worker registered:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('Service Worker registration failed:', error);
+                    });
+            });
+        }
+
+        // Handle PWA install prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            setTimeout(() => showInstallPrompt(), 30000);
+        });
+
+        function showInstallPrompt() {
+            if (deferredPrompt) {
+                const banner = document.createElement('div');
+                banner.id = 'install-banner';
+                banner.innerHTML = `
+                    <div style="position:fixed;bottom:20px;left:20px;right:20px;background:linear-gradient(135deg,#e8a4b8,#d4849a);color:white;padding:1rem 1.5rem;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.2);display:flex;align-items:center;justify-content:space-between;z-index:9999;max-width:500px;margin:0 auto;">
+                        <div style="display:flex;align-items:center;gap:1rem;">
+                            <span style="font-size:2rem;">🌸</span>
+                            <div><strong>Install Bloom & Blossom</strong><br><span style="font-size:0.85rem;opacity:0.9;">Add to home screen</span></div>
+                        </div>
+                        <div style="display:flex;gap:0.5rem;">
+                            <button onclick="installPWA()" style="background:white;color:#d4849a;border:none;padding:0.6rem 1.2rem;border-radius:50px;font-weight:600;cursor:pointer;">Install</button>
+                            <button onclick="this.closest('#install-banner').remove()" style="background:transparent;color:white;border:1px solid rgba(255,255,255,0.5);padding:0.6rem 1rem;border-radius:50px;cursor:pointer;">Later</button>
+                        </div>
+                    </div>`;
+                document.body.appendChild(banner);
+            }
+        }
+
+        function installPWA() {
+            document.getElementById('install-banner')?.remove();
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => { deferredPrompt = null; });
+            }
+        }
+    </script>
 </body>
+
 </html>
