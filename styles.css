@@ -21,35 +21,35 @@
     --black: #1a1a1a;
     --gold: #d4a574;
     --gold-light: #e8c9a8;
-    
+
     /* Gradients */
     --gradient-primary: linear-gradient(135deg, #f8d7e0 0%, #e8a4b8 100%);
     --gradient-hero: linear-gradient(135deg, rgba(232, 164, 184, 0.9) 0%, rgba(90, 125, 90, 0.8) 100%);
     --gradient-card: linear-gradient(145deg, #ffffff 0%, #fff8f5 100%);
-    
+
     /* Shadows */
     --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
     --shadow-glow: 0 0 30px rgba(232, 164, 184, 0.3);
-    
+
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
-    
+
     /* Border Radius */
     --radius-sm: 8px;
     --radius-md: 16px;
     --radius-lg: 24px;
     --radius-full: 50px;
-    
+
     /* Typography */
     --font-primary: 'Playfair Display', Georgia, serif;
     --font-secondary: 'Poppins', sans-serif;
-    
+
     /* Transitions */
     --transition-fast: 0.2s ease;
     --transition-medium: 0.3s ease;
@@ -75,7 +75,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-primary);
     font-weight: 600;
     line-height: 1.3;
@@ -134,21 +139,23 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: var(--spacing-xs);
+    z-index: 1;
 }
 
 .logo-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .logo-text {
     font-family: var(--font-primary);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     background: var(--gradient-primary);
     -webkit-background-clip: text;
@@ -160,6 +167,9 @@ button {
     display: flex;
     gap: var(--spacing-md);
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a {
@@ -1186,6 +1196,7 @@ button {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -1196,6 +1207,7 @@ button {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1203,18 +1215,24 @@ button {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-15px);
     }
 }
 
 @keyframes pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
@@ -1225,7 +1243,7 @@ button {
     .categories-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -1236,33 +1254,33 @@ button {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .hero-content {
         margin: 0 auto;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .hero-image {
         max-width: 500px;
         margin: 0 auto;
     }
-    
+
     .about-grid {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cart-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .cart-summary {
         position: static;
     }
@@ -1283,56 +1301,56 @@ button {
         opacity: 0;
         transition: var(--transition-medium);
     }
-    
+
     .nav-links.active {
         transform: translateY(0);
         opacity: 1;
     }
-    
+
     .mobile-menu-btn {
         display: flex;
     }
-    
+
     .categories-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .about-features {
         grid-template-columns: 1fr;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
+
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .social-links {
         justify-content: center;
     }
-    
+
     .filter-bar {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .cart-header {
         display: none;
     }
-    
+
     .cart-item {
         grid-template-columns: 1fr;
         gap: var(--spacing-sm);
         text-align: center;
     }
-    
+
     .cart-product {
         flex-direction: column;
     }
-    
+
     .cart-quantity {
         justify-content: center;
     }
@@ -1342,15 +1360,15 @@ button {
     .hero h1 {
         font-size: 2rem;
     }
-    
+
     .hero-buttons {
         flex-direction: column;
     }
-    
+
     .section-title {
         font-size: 1.8rem;
     }
-    
+
     .page-header h1 {
         font-size: 2rem;
     }

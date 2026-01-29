@@ -79,20 +79,20 @@ function saveCart(cart) {
 function addToCart(productId) {
     const product = products.find(p => p.id === productId);
     if (!product) return;
-    
+
     let cart = getCart();
     const existingItem = cart.find(item => item.id === productId);
-    
+
     if (existingItem) {
         existingItem.quantity += 1;
     } else {
         cart.push({ id: productId, quantity: 1 });
     }
-    
+
     saveCart(cart);
     updateCartCount();
     showNotification(`${product.name} added to cart! 🌸`);
-    
+
     // Add animation to cart icon
     const cartIcon = document.getElementById('cartIcon');
     cartIcon.style.transform = 'scale(1.3)';
@@ -116,7 +116,7 @@ function showNotification(message) {
     // Remove existing notification
     const existing = document.querySelector('.notification');
     if (existing) existing.remove();
-    
+
     // Create notification
     const notification = document.createElement('div');
     notification.className = 'notification';
@@ -134,7 +134,7 @@ function showNotification(message) {
         animation: slideIn 0.3s ease;
         font-weight: 500;
     `;
-    
+
     // Add animation keyframes
     if (!document.querySelector('#notification-styles')) {
         const style = document.createElement('style');
@@ -151,9 +151,9 @@ function showNotification(message) {
         `;
         document.head.appendChild(style);
     }
-    
+
     document.body.appendChild(notification);
-    
+
     // Remove after 3 seconds
     setTimeout(() => {
         notification.style.animation = 'slideOut 0.3s ease';
@@ -164,7 +164,7 @@ function showNotification(message) {
 function renderProducts(containerId, productList = products) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    
+
     container.innerHTML = productList.map(product => `
         <div class="product-card" data-category="${product.category}">
             <div class="product-image">
@@ -183,7 +183,7 @@ function renderProducts(containerId, productList = products) {
                     ${product.originalPrice ? `<span class="original-price">$${product.originalPrice.toFixed(2)}</span>` : ''}
                 </div>
                 <button class="btn btn-primary" onclick="addToCart(${product.id})">
-                    Add to Cart 🛒
+                    Add to Cart
                 </button>
             </div>
         </div>
@@ -195,7 +195,7 @@ function initNavigation() {
     const navbar = document.getElementById('navbar');
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const navLinks = document.getElementById('navLinks');
-    
+
     // Scroll effect
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -204,14 +204,14 @@ function initNavigation() {
             navbar.classList.remove('scrolled');
         }
     });
-    
+
     // Mobile menu toggle
     if (mobileMenuBtn) {
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
     }
-    
+
     // Close mobile menu on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
@@ -230,22 +230,22 @@ function handleNewsletter(event) {
 }
 
 // ============ Initialize ============
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Initialize navigation
     initNavigation();
-    
+
     // Update cart count
     updateCartCount();
-    
+
     // Render featured products on home page
     const featuredContainer = document.getElementById('featuredProducts');
     if (featuredContainer) {
         renderProducts('featuredProducts', products.slice(0, 3));
     }
-    
+
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             if (href !== '#') {
                 e.preventDefault();
