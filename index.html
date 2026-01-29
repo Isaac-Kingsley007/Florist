@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloom & Blossom - Premium florist offering beautiful flower arrangements, bouquets, and floral designs for every occasion.">
+    <title>Bloom & Blossom | Premium Florist</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌸</span>
+                <span class="logo-text">Bloom & Blossom</span>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Shop Flowers</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon" id="cartIcon">
+                    🛒
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🌿 Fresh Flowers Daily</span>
+                <h1>Beautiful <span>Blooms</span> for Every Moment</h1>
+                <p>Discover our exquisite collection of hand-crafted floral arrangements. From romantic roses to exotic orchids, we bring nature's finest beauty to your doorstep.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Shop Now ✨</a>
+                    <a href="#featured" class="btn btn-secondary">Explore Collection</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero.png" alt="Beautiful flower arrangement">
+                <div class="floating-badge top-right">
+                    <div class="floating-badge-icon">🚚</div>
+                    <div class="floating-badge-text">
+                        <strong>Free Delivery</strong>
+                        Orders over $50
+                    </div>
+                </div>
+                <div class="floating-badge bottom-left">
+                    <div class="floating-badge-icon">⭐</div>
+                    <div class="floating-badge-text">
+                        <strong>5-Star Reviews</strong>
+                        2000+ Happy Customers
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Collection</span>
+                <h2 class="section-title">Featured Arrangements</h2>
+                <p class="section-subtitle">Hand-picked favorites loved by our customers</p>
+            </div>
+            
+            <div class="products-grid" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="products.html" class="btn btn-primary btn-lg">View All Products →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section categories-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Shop by Occasion</span>
+                <h2 class="section-title">Find the Perfect Flowers</h2>
+                <p class="section-subtitle">Whatever the occasion, we have the perfect arrangement</p>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" onclick="location.href='products.html'">
+                    <img src="images/flower2.png" alt="Romantic">
+                    <div class="category-overlay">
+                        <span class="category-name">Romance</span>
+                        <span class="category-count">15+ Arrangements</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="location.href='products.html'">
+                    <img src="images/flower3.png" alt="Birthday">
+                    <div class="category-overlay">
+                        <span class="category-name">Birthday</span>
+                        <span class="category-count">20+ Arrangements</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="location.href='products.html'">
+                    <img src="images/flower4.png" alt="Wedding">
+                    <div class="category-overlay">
+                        <span class="category-name">Wedding</span>
+                        <span class="category-count">25+ Arrangements</span>
+                    </div>
+                </div>
+                <div class="category-card" onclick="location.href='products.html'">
+                    <img src="images/flower5.png" alt="Sympathy">
+                    <div class="category-overlay">
+                        <span class="category-name">Sympathy</span>
+                        <span class="category-count">10+ Arrangements</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="images/flower1.png" alt="About Bloom & Blossom">
+                </div>
+                <div class="about-content">
+                    <span class="section-badge">About Us</span>
+                    <h2>Crafting Floral Art Since 2010</h2>
+                    <p>At Bloom & Blossom, we believe that every flower tells a story. Our passionate team of floral designers creates stunning arrangements that capture emotions and celebrate life's precious moments.</p>
+                    <p>We source the freshest blooms from sustainable local farms and international growers to ensure exceptional quality and beauty in every arrangement.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🌷</div>
+                            <div class="feature-text">
+                                <strong>Fresh Daily</strong>
+                                <span>Farm to doorstep</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✨</div>
+                            <div class="feature-text">
+                                <strong>Hand-Crafted</strong>
+                                <span>Expert designers</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🎁</div>
+                            <div class="feature-text">
+                                <strong>Gift Ready</strong>
+                                <span>Beautiful packaging</span>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">💝</div>
+                            <div class="feature-text">
+                                <strong>With Love</strong>
+                                <span>Personal messages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Join thousands of happy customers who trust us with their special moments</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The birthday bouquet I ordered exceeded all expectations! The flowers were incredibly fresh and the arrangement was absolutely stunning. My mom was in tears of joy!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SJ</div>
+                        <div class="author-info">
+                            <strong>Sarah Johnson</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Bloom & Blossom provided the most beautiful wedding flowers. The team was professional, creative, and made our special day even more magical."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EM</div>
+                        <div class="author-info">
+                            <strong>Emily Martinez</strong>
+                            <span>Wedding Customer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"I've been ordering monthly subscriptions for my office and the quality is consistently amazing. Great value and excellent customer service!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <strong>Michael Chen</strong>
+                            <span>Corporate Client</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get 15% Off Your First Order</h2>
+                <p>Subscribe to our newsletter for exclusive offers, floral care tips, and seasonal inspiration.</p>
+                <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn">Subscribe 💌</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="logo-text">🌸 Bloom & Blossom</span>
+                    <p>Bringing beauty and joy through the art of flowers since 2010. Every arrangement is crafted with love and care.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📌</a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html">Roses</a></li>
+                        <li><a href="products.html">Bouquets</a></li>
+                        <li><a href="products.html">Wedding</a></li>
+                        <li><a href="products.html">Sympathy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>📍 123 Flower Street, Garden City</li>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ hello@bloomnblossom.com</li>
+                        <li>🕐 Mon-Sat: 9am - 7pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2024 Bloom & Blossom. All rights reserved. Made with 💗 and 🌸</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>
